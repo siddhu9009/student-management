@@ -9,11 +9,11 @@ def add_student(name, age, grade):
     print(f"Student {name} added!")
 
 def show_students():
-    for s in students:
-        print(s)
-
-add_student("Siddhu", 19, "A")
-show_students()
+    if len(students) == 0:
+        print("No students found!")
+    else:
+        for s in students:
+            print(s)
 
 def delete_student(name):
     for s in students:
